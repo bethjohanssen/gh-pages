@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Day after tomorrow</title>
+    <link href="https://bethjohanssen.github.io/gh-pages/feed.xml" rel="self" />
+    <link href="https://bethjohanssen.github.io/gh-pages" />
+    <updated>2020-10-28T14:10:56+08:00</updated>
+    <author>
+        <name>bethjohanssen</name>
+    </author>
+    <id>https://bethjohanssen.github.io/gh-pages</id>
+
+    <entry>
+        <title>测试</title>
+        <author>
+            <name>bethjohanssen</name>
+        </author>
+        <link href="https://bethjohanssen.github.io/gh-pages/ce-shi.html"/>
+        <id>https://bethjohanssen.github.io/gh-pages/ce-shi.html</id>
+
+        <updated>2020-10-28T14:10:56+08:00</updated>
+            <summary>
+                <![CDATA[
+                    测试
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h1 id="测试">测试</h1>
+
+            ]]>
+        </content>
+    </entry>
+</feed>
