@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "一个夸夸奇谈的人类",
+    "title": "T",
     "description": "",
     "home_page_url": "https://bethjohanssen.github.io/gh-pages",
     "feed_url": "https://bethjohanssen.github.io/gh-pages/feed.json",
@@ -9,33 +9,5 @@
         "name": "bethjohanssen"
     },
     "items": [
-        {
-            "id": "https://bethjohanssen.github.io/gh-pages/shu-ji.html",
-            "url": "https://bethjohanssen.github.io/gh-pages/shu-ji.html",
-            "title": "书籍",
-            "summary": "《软件设计的哲学》 https://gdut_yy.gitee.io/doc-aposd/一些感受：",
-            "content_html": "<ol>\n<li>《软件设计的哲学》 <a href=\"https://gdut_yy.gitee.io/doc-aposd/\">https://gdut_yy.gitee.io/doc-aposd/</a></li>\n</ol>\n<p>一些感受：</p>\n",
-            "author": {
-                "name": "bethjohanssen"
-            },
-            "tags": [
-            ],
-            "date_published": "2020-10-29T15:13:17+08:00",
-            "date_modified": "2020-10-29T16:58:00+08:00"
-        },
-        {
-            "id": "https://bethjohanssen.github.io/gh-pages/ce-shi.html",
-            "url": "https://bethjohanssen.github.io/gh-pages/ce-shi.html",
-            "title": "测试",
-            "summary": "测试",
-            "content_html": "<h1 id=\"测试\">测试</h1>\n",
-            "author": {
-                "name": "bethjohanssen"
-            },
-            "tags": [
-            ],
-            "date_published": "2020-10-28T14:10:40+08:00",
-            "date_modified": "2020-10-28T14:10:56+08:00"
-        }
     ]
 }
