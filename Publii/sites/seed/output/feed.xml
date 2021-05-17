@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Seed</title>
+    <link href="https://bethjohanssen.github.io/gh-pages/feed.xml" rel="self" />
+    <link href="https://bethjohanssen.github.io/gh-pages" />
+    <updated>2021-01-05T22:38:13+08:00</updated>
+    <author>
+        <name>bethjohanssen</name>
+    </author>
+    <id>https://bethjohanssen.github.io/gh-pages</id>
+
+    <entry>
+        <title>2021</title>
+        <author>
+            <name>bethjohanssen</name>
+        </author>
+        <link href="https://bethjohanssen.github.io/gh-pages/2021.html"/>
+        <id>https://bethjohanssen.github.io/gh-pages/2021.html</id>
+            <category term="dream"/>
+
+        <updated>2021-01-05T22:38:13+08:00</updated>
+            <summary>
+                <![CDATA[
+                    修理工在做每一件工作时，都要先抛开自己的想法，专注于要修理的东西上：他必须仔细去看、去听。 静下来，花时间去了解自己，认清自己的优势与目标。以整体的视角来思考问题，摆脱自己的身份标签后，所接触的事件与问题会不会发生什么变动呢？了解才是发言变革的前提，潜下心来去观察了解事物/问题所在。观点的碰撞是一件究极有趣的事儿，切勿拘束，准确表达出自己的观点。尽可能学习接触新的东西，系统的东西，学习思想框架重于实际代码语法，知其然需知其所以然。实践是检验学习的核心事件，思考解决问题才是核心内驱力。总结复盘反思，给与自己以反馈，以批判性思维看待问题。拆解问题，以变成能够实际执行的步骤。拓宽自己的生活，快速接触，有趣与舒适。
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <blockquote>
+<p>修理工在做每一件工作时，都要先抛开自己的想法，专注于要修理的东西上：他必须仔细去看、去听。 </p>
+</blockquote>
+<ol>
+<li>静下来，花时间去了解自己，认清自己的优势与目标。</li>
+<li>以整体的视角来思考问题，摆脱自己的身份标签后，所接触的事件与问题会不会发生什么变动呢？</li>
+<li>了解才是发言变革的前提，潜下心来去观察了解事物/问题所在。</li>
+<li>观点的碰撞是一件究极有趣的事儿，切勿拘束，准确表达出自己的观点。</li>
+<li>尽可能学习接触新的东西，系统的东西，学习思想框架重于实际代码语法，知其然需知其所以然。</li>
+<li>实践是检验学习的核心事件，思考解决问题才是核心内驱力。</li>
+<li>总结复盘反思，给与自己以反馈，以批判性思维看待问题。</li>
+<li>拆解问题，以变成能够实际执行的步骤。</li>
+<li>拓宽自己的生活，快速接触，有趣与舒适。</li>
+</ol>
+
+            ]]>
+        </content>
+    </entry>
+</feed>
