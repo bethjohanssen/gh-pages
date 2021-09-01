@@ -3,10 +3,89 @@
     <title>Seed</title>
     <link href="https://bethjohanssen.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://bethjohanssen.github.io/gh-pages" />
-    <updated>1970-01-01T08:00:00+08:00</updated>
+    <updated>2021-09-01T09:35:18+08:00</updated>
     <author>
         <name>bethjohanssen</name>
     </author>
     <id>https://bethjohanssen.github.io/gh-pages</id>
 
+    <entry>
+        <title>Windows平台VS2019创建GTest项目</title>
+        <author>
+            <name>bethjohanssen</name>
+        </author>
+        <link href="https://bethjohanssen.github.io/gh-pages/windowsping-tai-vs2019chuang-jian-gtestxiang-mu.html"/>
+        <id>https://bethjohanssen.github.io/gh-pages/windowsping-tai-vs2019chuang-jian-gtestxiang-mu.html</id>
+            <category term="工具"/>
+            <category term="VS2019"/>
+            <category term="GoogleTest"/>
+
+        <updated>2021-09-01T09:35:18+08:00</updated>
+            <summary>
+                <![CDATA[
+                    平台：Windows10 编译器：VS2019（VS2019已集成了google test） 微软官方说明文档 单元测试入门 - Visual Studio (Windows) | Microsoft Docs 问题清单： 官方文档 如何使用适用于&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <p>平台：Windows10
+编译器：VS2019（VS2019已集成了google test）</p>
+<blockquote>
+<p>微软官方说明文档 <a href="https://docs.microsoft.com/zh-cn/visualstudio/test/getting-started-with-unit-testing?view=vs-2019&amp;tabs=mstest">单元测试入门 - Visual Studio (Windows) | Microsoft Docs</a></p>
+</blockquote>
+<ol>
+<li>在 Visual Studio 中，打开要测试的项目。</li>
+<li>在“解决方案资源管理器”中，选择解决方案节点。 然后，在顶部菜单栏中，选择“文件” &gt; “添加” &gt; “新项目” 。
+<figure class="post__image"><img loading="lazy" src="media/files/146c7226-a1b2-46c5-998c-7303feff80d8.png" data-is-external-image="true"  alt="146c7226-a1b2-46c5-998c-7303feff80d8.png" /></figure></li>
+<li>在新项目对话框中，找到要使用的测试框架的单元测试项目模板（Google Test），并选择它。
+<figure class="post__image"><img loading="lazy" src="media/files/a365ce04-bb07-4f2e-aae3-25c3ebd88ef8.png" data-is-external-image="true"  alt="a365ce04-bb07-4f2e-aae3-25c3ebd88ef8.png" /></figure></li>
+<li>配置新项目，并选择”创建”。
+<figure class="post__image"><img loading="lazy" src="media/files/3c6f83d8-48c8-4677-9321-1f480c699bd5.png" data-is-external-image="true"  alt="3c6f83d8-48c8-4677-9321-1f480c699bd5.png" /></figure></li>
+<li>测试项目配置。<ol>
+<li>选择要测试的项目。选择一个项目时，Visual Studio会添加对所选项目的引用。不选择任何项目，需要手动添加对要测试项目的引用。</li>
+<li>在 Google Test 二进制文件的静态和动态链接之间进行选择时，注意事项与任何 C++ 程序相同。 有关详细信息，请参阅 <a href="https://docs.microsoft.com/zh-cn/cpp/build/dlls-in-visual-cpp?view=msvc-160">Visual C++ 中的 DLL</a>。</li>
+<li>Google Test 二进制文件会自动下载到解决方案的根路径下的“packages” 文件夹。
+<figure class="post__image"><img loading="lazy" src="media/files/13a3a9b5-b108-435b-ba09-905a9e7030c7.png" data-is-external-image="true"  alt="13a3a9b5-b108-435b-ba09-905a9e7030c7.png" /></figure></li>
+</ol>
+</li>
+<li>添加Include指令。 
+在test.cpp 文件中，添加任何所需的 #include 指令以使程序的类型和函数对测试代码可见。 通常，程序在文件夹层次结构中的上一层。 如果键入 #include “../“，则会出现一个 IntelliSense 窗口，使你可以选择头文件的完整路径。
+<figure class="post__image"><img loading="lazy" src="media/files/b2c1b9e3-225e-43e1-9feb-ae9d652ad344.png" data-is-external-image="true"  alt="b2c1b9e3-225e-43e1-9feb-ae9d652ad344.png" /></figure></li>
+<li>运行单元测试，打开测试资源管理器，选择顶部菜单栏中的“测试”&gt;“测试资源管理器”（或按 Ctrl + E，T）。点击”在视图中运行所有测试”。<a href="https://docs.microsoft.com/zh-cn/visualstudio/test/run-unit-tests-with-test-explorer?view=vs-2019">测试资源管理器</a>
+<figure class="post__image"><img loading="lazy" src="media/files/8a2f7d4e-990a-4d74-937f-542e4bc30858.png" data-is-external-image="true"  alt="8a2f7d4e-990a-4d74-937f-542e4bc30858.png" /></figure></li>
+</ol>
+<hr>
+<p>问题清单：</p>
+<blockquote>
+<p>官方文档 <a href="https://docs.microsoft.com/zh-cn/visualstudio/test/how-to-use-google-test-for-cpp?view=vs-2019">如何使用适用于 C++ 的 Google Test - Visual Studio (Windows) | Microsoft Docs</a></p>
+</blockquote>
+<ol>
+<li>无法找到Google Test。
+验证是否在计算机上安装了Google Test, 注意只有在isual Studio 2017 及更高版本中Visual Studio才集成了Google Test。验证方式：打开Visual Studio Installer程序，在工作负荷组件下找到Google Test测试适配器：
+<figure class="post__image"><img loading="lazy" src="media/files/feb62d3f-82fb-4678-876f-10b842d5e7ac.png" data-is-external-image="true"  alt="feb62d3f-82fb-4678-876f-10b842d5e7ac.png" /></figure></li>
+<li>无法打开文件gtest_maind.lib。
+<figure class="post__image"><img loading="lazy" src="media/files/42249b92-eb4d-4a52-8bdf-6e518208b682.png" data-is-external-image="true"  alt="42249b92-eb4d-4a52-8bdf-6e518208b682.png" /></figure>
+文件路径过长，超出最大路径长度限制。可能是由于<a href="https://docs.microsoft.com/zh-cn/windows/win32/fileio/maximum-file-path-limitation?tabs=cmd">最大路径长度限制</a>。</li>
+<li>fatal error C1189: #error:  Building MFC application with /MD[d] (CRT dll version) requires MFC shared dll version. Please #define _AFXDLL or do not use /MD[d]
+<figure class="post__image"><img loading="lazy" src="media/files/c7107611-0da0-4c1f-b82a-0e881c6822a1.png" data-is-external-image="true"  alt="c7107611-0da0-4c1f-b82a-0e881c6822a1.png" /></figure>
+测试项目运行库应与被测试项目的运行库保持一致。若测试项目为在共享DLL中使用MFC，则可依据报错信息在预编译文件“pch.h“中添加<code>#define _AFXDLL</code>。</li>
+<li>error LNK2038: 检测到“RuntimeLibrary”的不匹配项: 值“MDd_DynamicDebug”不匹配值“MTd_StaticDebug”(test.obj 中)。
+<figure class="post__image"><img loading="lazy" src="media/files/4a7984f9-e6ae-43b5-b2ca-2284d62f9eeb.png" data-is-external-image="true"  alt="4a7984f9-e6ae-43b5-b2ca-2284d62f9eeb.png" /></figure>
+运行库保持不一致，测试项目运行库应与被测试项目的运行库保持一致。</li>
+<li>项目生成成功而，但是测试资源管理器为空，未显示可用测试。
+<figure class="post__image"><img loading="lazy" src="media/files/a191fe30-6078-40a5-90ee-665fe7b9969b.png" data-is-external-image="true"  alt="a191fe30-6078-40a5-90ee-665fe7b9969b.png" /></figure>
+<figure class="post__image"><img loading="lazy" src="media/files/e1ffe1d5-4389-4258-b50c-c2262107cea2.png" data-is-external-image="true"  alt="e1ffe1d5-4389-4258-b50c-c2262107cea2.png" /></figure><ol>
+<li>打开菜单”视图” &gt; “输出”，显示输出来源选择”测试”。查看输出日志。
+<figure class="post__image"><img loading="lazy" src="media/files/6a07a092-9802-4a8f-a643-07fb865490b9.png" data-is-external-image="true"  alt="6a07a092-9802-4a8f-a643-07fb865490b9.png" /></figure></li>
+<li>确认测试模块的可执行文件与被测试模块的可执行文件文件路径是否相同。</li>
+</ol>
+</li>
+<li>unknown file: error: SEH exception with code 0xc0000005 thrown in the test body.
+访问了非法的内存地址。解决方式：在顶部菜单栏中，选择“调试” &gt; “窗口” &gt; “异常设置” ，确保所有项都打勾，然后调试运行，根据报错信息进行修改。
+<figure class="post__image"><img loading="lazy" src="media/files/8470ef77-9bcd-4562-b971-fb45b16b2c62.png" data-is-external-image="true"  alt="8470ef77-9bcd-4562-b971-fb45b16b2c62.png" /></figure></li>
+</ol>
+
+            ]]>
+        </content>
+    </entry>
 </feed>
