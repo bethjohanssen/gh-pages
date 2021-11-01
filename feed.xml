@@ -3,7 +3,7 @@
     <title>Seed</title>
     <link href="https://bethjohanssen.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://bethjohanssen.github.io/gh-pages" />
-    <updated>2021-11-01T13:10:19+08:00</updated>
+    <updated>2021-11-01T13:11:46+08:00</updated>
     <author>
         <name>bethjohanssen</name>
     </author>
@@ -16,8 +16,10 @@
         </author>
         <link href="https://bethjohanssen.github.io/gh-pages/bian-ma-feng-ge.html"/>
         <id>https://bethjohanssen.github.io/gh-pages/bian-ma-feng-ge.html</id>
+            <category term="编码风格"/>
+            <category term="C++"/>
 
-        <updated>2021-11-01T13:10:19+08:00</updated>
+        <updated>2021-11-01T13:11:46+08:00</updated>
             <summary>
                 <![CDATA[
                     编码风格 规则的作用就是避免混乱。但规则本身一定要权威，有说服力，并且是理性的。 以下为个人总结使用的C++编码风格，仅所记录，会随着想法不同而不断更新。 https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/ C++编码规范与指导 (baiy.cn) Doxygen Manual: Documenting the code doxygen 注释风格 VS2019 生成的文档注释样式：Doxygen(/**)&hellip;
@@ -112,7 +114,7 @@
             <category term="VS2019"/>
             <category term="GoogleTest"/>
 
-        <updated>2021-11-01T10:47:09+08:00</updated>
+        <updated>2021-11-01T13:11:37+08:00</updated>
             <summary>
                 <![CDATA[
                     基础信息 平台：Windows10 编译器：VS2019（VS2019已集成了google test） 微软官方说明文档 单元测试入门 - Visual Studio (Windows) | Microsoft Docs 官方文档 如何使用适用于&hellip;
