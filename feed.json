@@ -10,6 +10,20 @@
     },
     "items": [
         {
+            "id": "https://bethjohanssen.github.io/gh-pages/bian-ma-feng-ge.html",
+            "url": "https://bethjohanssen.github.io/gh-pages/bian-ma-feng-ge.html",
+            "title": "编码风格",
+            "summary": "编码风格 规则的作用就是避免混乱。但规则本身一定要权威，有说服力，并且是理性的。 以下为个人总结使用的C++编码风格，仅所记录，会随着想法不同而不断更新。 https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/ C++编码规范与指导 (baiy.cn) Doxygen Manual: Documenting the code doxygen 注释风格 VS2019 生成的文档注释样式：Doxygen(/**)&hellip;",
+            "content_html": "<h1 id=\"编码风格\">编码风格</h1>\n<blockquote>\n<p>规则的作用就是避免混乱。但规则本身一定要权威，有说服力，并且是理性的。</p>\n</blockquote>\n<p>以下为个人总结使用的C++编码风格，仅所记录，会随着想法不同而不断更新。</p>\n<h4 id=\"参考文档\">参考文档</h4>\n<blockquote>\n<p><a href=\"https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/\">https://zh-google-styleguide.readthedocs.io/en/latest/google-cpp-styleguide/contents/</a>\n<a href=\"http://baiy.cn/doc/cpp/index.htm\">C++编码规范与指导 (baiy.cn)</a></p>\n</blockquote>\n<h4 id=\"命名规范\">命名规范</h4>\n<ol>\n<li>通用命名规则。 <ol>\n<li>函数命名，变量命名，文件命名要有描述性；少用缩写。</li>\n<li>在保持一个标识符意思明确的同时，应当尽量缩短其长度。</li>\n<li>不要出现仅靠大小写区分的相似的标识符。</li>\n<li><del>程序中不要出现名字完全相同的局部变量和全局变量，尽管两者的作用域不同而不会发生语法错误，但容易使人误解。~~~~完全没有遵守的规则😂</del></li>\n</ol>\n</li>\n<li>命名空间命名。\n 不使用缩写作为名称。</li>\n<li><strong>类型命名</strong> 。\n 类型名称的每个单词首字母均大写，不包含下划线： <code>MyExcitingClass</code>，<code>MyExcitingEnum</code>。\n 所有类型命名 —— 类, 结构体, 类型定义 (<code>typedef</code>)，枚举，类型模板参数 —— 均使用相同约定，即以大写字母开始，每个单词首字母均大写，不包含下划线。\n 类的命名推荐用”名词”或”<strong>形容词＋名词</strong> “的形式。</li>\n<li>函数命名。\n 常规函数使用大小写混合，取值和设值函数则要求与变量名匹配。\n 一般来说，函数名的每个单词首字母大写 (即 “驼峰变量名” 或 “帕斯卡变量名”)，没有下划线。对于首字母缩写的单词，更倾向于将它们视作一个单词进行首字母大写 (例如，写作 <code>StartRpc()</code> 而非 <code>StartRPC()</code>)。\n 函数名应当使用”动词”或者”<strong>动词＋名词</strong> “（动宾词组）的形式。\n 所有返回布尔的函数应发起true/false的询问，如<code>IsVisible()</code> 或 <code>ShouldClearBuffer()</code>。</li>\n<li><strong>变量命名</strong> 。\n 变量 (包括函数参数) 和数据成员名一律小写，单词之间用下划线连接。\n <del>类的成员变量以下划线结尾，但结构体的就不用，如： ~~`a_local_variable`</del>， <del><code>a_struct_data_member</code></del>， <del><code>a_class_data_member_</code></del>。~~~~表示疑惑的规则。~~\n 变量的名字应当使用“名词”或者“<strong>形容词＋名词</strong> ”。</li>\n<li>常量命名。\n 声明为 <code>constexpr</code> 或 <code>const</code> 的变量，或在程序运行期间其值始终保持不变的，命名时以 “k” 开头，大小写混合。\n 所有具有静态存储类型的变量 (例如静态变量或全局变量, 参见 <a href=\"http://en.cppreference.com/w/cpp/language/storage_duration#Storage_duration\">存储类型</a>) 都应当以此方式命名。对于其他存储类型的变量，如自动变量等，这条规则是可选的。 如果不采用这条规则， 就按照一般的变量命名规则。</li>\n<li>枚举命名。\n 枚举的命名和常量一致: <code>kEnumName</code> 。</li>\n<li>宏命名。\n 全部大写，使用下划线。</li>\n</ol>\n<hr>\n<h4 id=\"代码风格与版式\">代码风格与版式</h4>\n<ol>\n<li></li>\n</ol>\n<hr>\n<h4 id=\"注释规范\">注释规范</h4>\n<p><a href=\"https://www.doxygen.nl/manual/docblocks.html\">Doxygen Manual: Documenting the code</a></p>\n<p>doxygen 注释风格</p>\n<p>VS2019 生成的文档注释样式：Doxygen(/**)</p>\n<ul>\n<li><strong>brief description</strong>  简要说明。简短一行。</li>\n<li><strong>detailed description</strong>  详细描述。更长，更详细的文档。目前使用的是Javadoc风格。\n```C++\n/**</li>\n</ul>\n<ul>\n<li>… text …</li>\n<li>/\n```</li>\n</ul>\n<ul>\n<li><strong>body description</strong>  可以作为详细描述，也可以描述详细实现的集合。</li>\n</ul>\n<p>在成员之后放置文档</p>\n<p>如果要记录文件、结构、联合、类或枚举的成员，有时需要将文档块放在成员之后而不是之前。 为此，您必须在注释块中放置一个额外的 &lt; 标记。 请注意，这也适用于函数的参数。 </p>\n<pre><code class=\"language-C++\">///&lt; Detailed description after the member\n/**&lt; [in] docs for input parameter v. */\n</code></pre>\n<p><a href=\"https://www.doxygen.nl/manual/commands.html\">Doxygen Manual: Special Commands</a></p>\n",
+            "author": {
+                "name": "bethjohanssen"
+            },
+            "tags": [
+            ],
+            "date_published": "2021-11-01T13:10:19+08:00",
+            "date_modified": "2021-11-01T13:10:19+08:00"
+        },
+        {
             "id": "https://bethjohanssen.github.io/gh-pages/windowsping-tai-vs2019chuang-jian-gtestxiang-mu.html",
             "url": "https://bethjohanssen.github.io/gh-pages/windowsping-tai-vs2019chuang-jian-gtestxiang-mu.html",
             "title": "Windows平台VS2019创建GTest项目",
