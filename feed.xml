@@ -3,7 +3,7 @@
     <title>Seed</title>
     <link href="https://bethjohanssen.github.io/gh-pages/feed.xml" rel="self" />
     <link href="https://bethjohanssen.github.io/gh-pages" />
-    <updated>2021-09-01T09:35:18+08:00</updated>
+    <updated>2021-11-01T10:47:09+08:00</updated>
     <author>
         <name>bethjohanssen</name>
     </author>
@@ -20,19 +20,23 @@
             <category term="VS2019"/>
             <category term="GoogleTest"/>
 
-        <updated>2021-09-01T09:35:18+08:00</updated>
+        <updated>2021-11-01T10:47:09+08:00</updated>
             <summary>
                 <![CDATA[
-                    平台：Windows10 编译器：VS2019（VS2019已集成了google test） 微软官方说明文档 单元测试入门 - Visual Studio (Windows) | Microsoft Docs 问题清单： 官方文档 如何使用适用于&hellip;
+                    基础信息 平台：Windows10 编译器：VS2019（VS2019已集成了google test） 微软官方说明文档 单元测试入门 - Visual Studio (Windows) | Microsoft Docs 官方文档 如何使用适用于&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                <p>平台：Windows10
-编译器：VS2019（VS2019已集成了google test）</p>
+                <h1 id="基础信息">基础信息</h1>
+<ul>
+<li>平台：Windows10</li>
+<li>编译器：VS2019（VS2019已集成了google test）</li>
+</ul>
 <blockquote>
 <p>微软官方说明文档 <a href="https://docs.microsoft.com/zh-cn/visualstudio/test/getting-started-with-unit-testing?view=vs-2019&amp;tabs=mstest">单元测试入门 - Visual Studio (Windows) | Microsoft Docs</a></p>
 </blockquote>
+<h1 id="创建步骤">创建步骤</h1>
 <ol>
 <li>在 Visual Studio 中，打开要测试的项目。</li>
 <li>在“解决方案资源管理器”中，选择解决方案节点。 然后，在顶部菜单栏中，选择“文件” &gt; “添加” &gt; “新项目” 。
@@ -55,7 +59,7 @@
 <figure class="post__image"><img loading="lazy" src="media/files/8a2f7d4e-990a-4d74-937f-542e4bc30858.png" data-is-external-image="true"  alt="8a2f7d4e-990a-4d74-937f-542e4bc30858.png" /></figure></li>
 </ol>
 <hr>
-<p>问题清单：</p>
+<h1 id="问题清单：">问题清单：</h1>
 <blockquote>
 <p>官方文档 <a href="https://docs.microsoft.com/zh-cn/visualstudio/test/how-to-use-google-test-for-cpp?view=vs-2019">如何使用适用于 C++ 的 Google Test - Visual Studio (Windows) | Microsoft Docs</a></p>
 </blockquote>
